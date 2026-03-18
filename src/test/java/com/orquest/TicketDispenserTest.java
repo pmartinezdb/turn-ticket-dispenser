@@ -32,4 +32,20 @@ class TicketDispenserTest {
         // Then
         assertNotEquals(ticketOne.getTurnNumber(), ticketTwo.getTurnNumber());
     }
+
+    @Test
+    void should_retrieve_different_tickets_by_dispensers_with_different_providers() {
+        // Given
+        var dispenserOne = new TicketDispenser(new TurnNumberSequence());
+        var dispenserTwo = new TicketDispenser(new TurnNumberSequence());
+
+        // When
+        var ticketOne = dispenserOne.getTurnTicket();
+        var ticketTwo = dispenserTwo.getTurnTicket();
+
+        // Then
+        assertNotEquals(ticketOne.getTurnNumber(), ticketTwo.getTurnNumber());
+    }
+
+
 }

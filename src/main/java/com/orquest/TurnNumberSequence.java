@@ -1,9 +1,12 @@
 package com.orquest;
 
-public class TurnNumberSequence {
-    private static int turnNumber = 0;
+import java.util.concurrent.atomic.AtomicInteger;
 
-    public static int getNextTurnNumber() {
-        return turnNumber++;
+public class TurnNumberSequence implements TurnNumberSequenceProvider {
+    private static final AtomicInteger turnNumber = new AtomicInteger(0);
+
+    @Override
+    public int getNextTurnNumber() {
+        return turnNumber.incrementAndGet();
     }
 }
