@@ -1,5 +1,5 @@
 package com.orquest.turnticket;
 
-public interface TurnNumberSequenceProvider {
+public interface TurnProvider {
     Turn getNextTurn();
 }

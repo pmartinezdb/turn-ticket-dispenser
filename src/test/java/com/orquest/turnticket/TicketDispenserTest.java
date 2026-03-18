@@ -11,7 +11,7 @@ import org.mockito.Mockito;
 
 class TicketDispenserTest {
 
-    private TurnNumberSequenceProvider provider = Mockito.mock(TurnNumberSequenceProvider.class);
+    private TurnProvider provider = Mockito.mock(TurnProvider.class);
 
     @BeforeEach
     void setUp() {

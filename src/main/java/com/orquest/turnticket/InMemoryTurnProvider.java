@@ -2,7 +2,7 @@ package com.orquest.turnticket;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class InMemoryTurnProvider implements TurnNumberSequenceProvider {
+public class InMemoryTurnProvider implements TurnProvider {
     private static final AtomicInteger turnNumber = new AtomicInteger(0);
 
     @Override
