@@ -1,11 +1,11 @@
-package com.orquest;
+package com.orquest.turnticket;
 
 public class TicketDispenser {
 
     private final TurnNumberSequenceProvider turnNumberSequence;
 
     public TicketDispenser() {
-        this(new TurnNumberSequence());
+        this(new InMemoryTurnProvider());
     }
 
     public TicketDispenser(TurnNumberSequenceProvider turnNumberSequence) {
@@ -13,7 +13,6 @@ public class TicketDispenser {
     }
 
     public TurnTicket getTurnTicket() {
-        int newTurnNumber = turnNumberSequence.getNextTurnNumber();
-        return new TurnTicket(newTurnNumber);
+        return new TurnTicket(turnNumberSequence.getNextTurn());
     }
 }
