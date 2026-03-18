@@ -1,16 +1,20 @@
 package com.orquest;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
 class TicketDispenserTest {
 
     @Test
-    void foo() {
-        TicketDispenser dispenser = new TicketDispenser();
-        TurnTicket ticket = dispenser.getTurnTicket();
-        assertEquals(-1, ticket.getTurnNumber());
-    }
+    void should_retrieve_new_ticket() {
+        // Given
+        var dispenser = new TicketDispenser();
 
+        // When
+        var ticket = dispenser.getTurnTicket();
+
+        // Then
+        assertTrue(ticket.getTurnNumber() >= 0);
+    }
 }
