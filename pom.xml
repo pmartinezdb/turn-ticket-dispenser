@@ -7,7 +7,7 @@
     <groupId>com.orquest</groupId>
     <artifactId>turn-ticket-dispenser</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.target>21</maven.compiler.target>

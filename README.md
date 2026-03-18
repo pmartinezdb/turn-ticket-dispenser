@@ -11,3 +11,5 @@ Acknowledgements
 This exercise was originally designed by Luca Minudel and is included in his repo 
 [TDDwithMockObjectsAndDesignPrinciples](https://github.com/lucaminudel/TDDwithMockObjectsAndDesignPrinciples)
 Then adapted by Emily Bache to java language in this repo [TurnTicket-Kata-EmilyBache](https://github.com/emilybache/TurnTicket-Kata)
+
+This is a fork from [Turn Ticket Dispenser - drenedo](https://github.com/drenedo/turn-ticket-dispenser)
